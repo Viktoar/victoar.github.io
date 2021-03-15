@@ -13,10 +13,19 @@ $(function () {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         variableWidth: false,
+        responsive: [
+            {
+                breakpoint: 1141,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
 
@@ -52,5 +61,16 @@ $(function () {
     $('.fa-search').on('click', function () {
         $('.search__form').toggleClass('search__form--active');
     });
-
+    $('.tabs__menu').on('click', function () {
+        $('.tabs__items').toggleClass('tabs__items--active');
+    });
+    $('.posts').on('click', function () {
+        $('.posts__list').toggleClass('posts__list--active');
+    });
+    $('.info').on('click', function () {
+        $('.info__list').toggleClass('info__list--active');
+    });
+    $('.recent').on('click', function () {
+        $('.footer__news-block').toggleClass('footer__news-block--active');
+    });
 })
