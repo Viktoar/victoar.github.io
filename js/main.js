@@ -7,6 +7,7 @@ $(function () {
         fade: true,
 
 
+
     });
 
     $('.feedback__slider').slick({
