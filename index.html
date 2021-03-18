@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-pro-5.9.0-web/fontawesome-pro-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.min.css">
 
 
@@ -90,8 +91,36 @@
                         Us Today</span>
                 </div>
 
+                <form id="callback" class="mfp-hide white-popup-block">
+                    <h2 class="callback__title ">Leave your contact</h2>
+                    <fieldset>
+                        <ol>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="text" placeholder="Name" required="">
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="email" placeholder="example@domain.com"
+                                    required="">
+                            </li>
+                            <li>
+                                <label for="phone">Phone:</label>
+                                <input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+                            </li>
+                            <li>
+                                <label for="textarea">Comment</label><br>
+                                <textarea id="textarea"
+                                    placeholder="Try to resize me to see how popup CSS-based resizing works."></textarea>
+                            </li>
+                            <li>
+                                <button class="callback__btn" type="submit">Send</button>
+                            </li>
+                        </ol>
+                    </fieldset>
+                </form>
                 <div class="contact__btn">
-                    <a href="#" class="contacts__btn-link">Get a Quote</a>
+                    <a href="#callback" class="contacts__btn-link popup-with-form">Get a Quote</a>
                 </div>
             </div>
         </div>
@@ -406,7 +435,7 @@
                     <span>It can be used on larger scale projects as well as small scale projects without any
                         problems.</span>
                 </h3>
-                <a href="#" class="information__link">Contact Us!</a>
+                <a href="#callback" class="information__link popup-with-form">Contact Us!</a>
             </div>
         </div>
     </div>
