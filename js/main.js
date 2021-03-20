@@ -17,7 +17,7 @@ $(function () {
         autoplay: false,
         arrows: false,
         dots: true,
-        variableWidth: false,
+
         responsive: [
             {
                 breakpoint: 1141,
@@ -33,6 +33,7 @@ $(function () {
         type: 'inline',
         preloader: false,
         focus: '#name',
+        fixedContentPos: true,
 
         // When elemened is focused, some mobile browsers in some cases zoom in
         // It looks not nice, so we disable it:
